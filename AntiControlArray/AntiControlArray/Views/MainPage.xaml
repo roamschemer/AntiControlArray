@@ -2,10 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AntiControlArray.Views.MainPage"
-             Title="{Binding Title}">
+             Title="アンチコントロール配列">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
+    <StackLayout>
+        <Button Command="{Binding Command}" 
+                Text="{Binding Text.Value}" 
+                TextColor="{Binding TextColor.Value}"
+                BackgroundColor="{Binding BackgroundColor.Value}"
+                />
     </StackLayout>
 
 </ContentPage>
